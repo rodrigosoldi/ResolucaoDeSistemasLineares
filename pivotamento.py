@@ -15,7 +15,15 @@ para i de 0 até N - 1
         div recebe pivot / n1
         Aj recebe Aj - Ai*div
 
+Complexidade: O(nˆ3)
+    . os primeiros dois loops já fazem o Algoritmo
+    ser, no mínimo, O(n^2). Entretanto, existe a 
+    possibilidade de haver um terceiro loop para 
+    encontrar a linha que deverá sofrer o swap.
+
 ====================================
+
+. Algoritmo: Triangular
 
 x recebe vetor(0)
 para i de N - 1 até 0
@@ -26,6 +34,19 @@ para i de N - 1 até 0
         senão
             sum recebe sum + A[i][j]
     x[i] = A[i+1][j]
+
+Complexidade: O(n^2)
+    . Dois loops, nas linhas e colunas da matriz.
+
+=====================================
+
+. Algoritmo: Gauss
+
+Pivotamento(A)
+Triangular(A)
+
+Complexidade: O(n^3) + O(n^2) = O(n^3)
+
 
 """
 
