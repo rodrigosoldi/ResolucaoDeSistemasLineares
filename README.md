@@ -2,4 +2,7 @@
 Algoritmos para Pivotamento, Triangulação e Método de eliminação de Gauss para resolução de SISTEMAS LINEARES. Utilizando a linguagem de programação Python.
 
 Projeto Desenvolvido por:
-[Emannuel](https://github.com/emannuelOC/emannuelOC.github.io)
+[Rodrigo Soldi](https://github.com/rodrigosoldi)
+[Emannuel Fernandes](https://github.com/emannuelOC/)
+[Lucas Augusto](https://github.com/LucasCordeiro)
+[Kaique](https://github.com/KaiqueDamato)
