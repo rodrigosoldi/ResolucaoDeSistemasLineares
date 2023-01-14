@@ -55,11 +55,11 @@ def pivotamento(A):
     """A função recebe uma matriz A (n x n) e
     retorna a matriz zerada na diagonal inferior
     esquerda."""
-    for i in xrange(len(A) - 1):
-        for j in xrange(i + 1,len(A)):
+    for i in range(len(A) - 1):
+        for j in range(i + 1,len(A)):
             n1 = A[j][i]
             if n1 == 0:
-                for k in xrange(i,len(A)):
+                for k in range(i,len(A)):
                     if A[k][i] != 0:
                         swap(A, i, k)
                         n1 = A[j][i]
@@ -73,20 +73,20 @@ def pivotamento(A):
 
 def multVector(v, x):
     newV = []
-    for i in xrange(len(v)):
+    for i in range(len(v)):
         newV += [v[i] * x]
     return newV
 
 def sumVector(v1, v2):
     newV = []
-    for i in xrange(len(v1)):
+    for i in range(len(v1)):
         newV += [v1[i] + v2[i]]
     return newV
 
 def swap(A, i, j):
     newI = []
     newJ = []
-    for index in xrange(len(A) + 1):
+    for index in range(len(A) + 1):
         newI += [A[j][index]]
         newJ += [A[i][index]]
     A[i] = newI
@@ -94,10 +94,10 @@ def swap(A, i, j):
 
 def printMatrix(A):
     for i in A:
-        print "|\t",
+        print("|",end="\t")
         for j in i:
-            print "%.1f" %(j), "\t",
-        print "\t|"
+            print(j,end="\t")
+        print("|")
 
 A = [[1.0, -1.0, 2.0, -1.0, -8.0], [2.0, -2.0, 3.0, -3.0, -20], [1.0, 1.0, 1.0, 0.0, -2.0], [1.0, -1.0, 4.0, -3.0, 4.0]]
 printMatrix(A)
